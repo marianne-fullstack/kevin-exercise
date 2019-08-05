@@ -1,0 +1,109 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the services section of the site/application.
+// -----------------------------------------------------------------------------
+.my-services-section {
+  padding-top: 102px;
+  padding-bottom: 56px;
+
+  .p-holder {
+    margin-bottom: 75px;
+  }
+  
+  .service-holder {
+    padding: 2.3% 2%;
+    height: 232px;
+
+    background: $gray-100;
+
+    .service-txt { 
+      font-size: 12px; 
+    }
+
+    .web-service { 
+      font-size: 22px; 
+    }
+  }
+
+  h4 { 
+    margin-bottom: 20px;
+
+    font-size: 21px;
+    font-weight: bold; 
+  }
+
+  i {
+    display: inline-block;
+    padding: 7% 6%;
+
+    color: $brand-color;
+
+    border-radius: 114px;
+    border: 2px solid $brand-color;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 101.8%;
+  }
+
+  .service {
+    flex: 0 0 31.4%;
+    padding-top: 30px;
+    padding-bottom: 4px;
+    margin-bottom: 2.6%;
+    
+    background: $gray;
+  }
+}
+
+@include respond-to(md-down) {
+  .my-services-section {
+    .service {
+      flex: 0 0 48%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 3.5%;  
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .my-services-section {
+    padding-bottom: 50px;
+
+    i { 
+      padding: 9% 8%; 
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .my-services-section {
+    padding-top: 90px;
+    padding-bottom: 51px;
+
+    .cyan-line {
+      margin-left: 39.5%;
+    }
+
+    i {
+      padding: 8% 6%;
+    }
+
+    .service-holder { 
+      padding: 10% 2%; 
+    }
+
+    .service {
+      flex: 0 0 97.5%;
+      padding-top: 24px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 30px;
+    }
+  }  
+}

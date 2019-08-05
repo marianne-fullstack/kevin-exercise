@@ -1,0 +1,59 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the my-portfolio section of the site/application.
+// -----------------------------------------------------------------------------
+.my-portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 81px;
+
+  .cyan-line {
+    margin-top: 1.6%;
+  }
+
+  .p-holder { 
+    margin-bottom: 35px; 
+  }
+
+  .portfolio-img { 
+    margin-bottom: 37px; 
+    margin-left: 3%;
+  }
+
+  .portfolio-holder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-thumb {
+    flex: 0 0 31%;
+  }
+}
+
+@include respond-to(xs) {
+  .my-portfolio-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+
+    .cyan-line { 
+      margin-top: 2.8%; 
+    }
+
+    .p-holder { 
+      margin-bottom: 39px;
+    }
+
+    .portfolio-holder {
+      padding: 0 2%;
+
+      .portfolio-thumb {
+        flex: 0 0 42.4%;
+
+        .portfolio-img:nth-child(even) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

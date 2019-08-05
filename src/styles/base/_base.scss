@@ -1,0 +1,160 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+.btn,
+a {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+
+  @include on-event {
+    outline: 0;
+    @include boxshadow(none);
+  }
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+  outline: none;
+
+  @include on-event {
+    @include boxshadow(none);
+  }
+}
+
+//styles for navbar-toggler
+.navbar-toggler {
+  padding: 10px 0;
+
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    display: block;
+    height: 4px;
+    width: 29px;
+
+    background: #000;
+
+    @include transition(0.5s cubic-bezier(0.65, 0.05, 0.36, 1));
+
+    @include boxshadow(none);
+
+    &+.icon-bar {
+      margin-top: 4px;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .icon-bar {
+      &:first-child {
+        @include transform(rotate(225deg) translate(-6px, -5px));
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        @include transform(rotate(-225deg) translate(-6px, 6px));
+      }
+    }
+  }
+
+  @include on-event() {
+    outline: 0;
+  }
+}
+
+// styles for section titles
+.section-header {
+  margin-left: 2%;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-me-section,
+.my-portfolio-section {
+  background: $gray-100;
+}
+
+.about-me-section,
+.my-services-section,
+.my-portfolio-section,
+.client-testimonials-section,
+.contact-me-section {
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.home,
+.about-me-section,
+.my-services-section,
+.my-portfolio-section,
+.contact-me-section {
+  p {
+    margin-bottom: 20px;
+    max-width: 895px;
+
+    font-size: 15px;
+  }
+}
+
+.cyan-line {
+  margin-top: 1.5%;
+  margin-left: 47.7%;
+  width: 76px;
+  height: 3px;
+
+  background: $brand-color;
+}
+
+@include respond-to(lg) {
+  .cyan-line {
+    margin-left: 46.4%;
+  }
+}
+
+@include respond-to(md) {
+  .cyan-line {
+    margin-left: 45%;
+  }
+}
+
+@include respond-to(sm) {
+  .cyan-line {
+    margin-left: 43%;
+  }
+}
+
+@include respond-to(xs) {
+  .cyan-line {
+    margin-top: 3%;
+    margin-left: 40%;
+  }
+}

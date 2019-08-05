@@ -1,0 +1,69 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  background: $brand-color;
+}
+
+.navbar {
+  padding: .5rem 0;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+    }
+  }
+}
+
+.navbar-expand-lg {
+  .navbar-nav {
+    .nav-link {
+      padding-right: 20px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.navbarNav {
+  padding-top: 3px;
+}
+
+.navbar-brand {
+  padding: 15px 0;
+  margin-left: 3px;
+
+  font-size: 1.8em;
+}
+
+.nav-link {
+  padding: 0 20px;
+  
+  font-family: $font-muli-light;
+  font-size: 15px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+@include respond-to(xs) {
+  .navbar { 
+    padding-top: 13px;
+    padding-right: 10px; 
+  }
+  .navbar-brand {
+    padding: 0;
+    margin-left: 14px;
+
+    font-size: 26px;    
+  }
+
+  .custom-toggler {
+    padding: 2px 4px;
+    
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+}

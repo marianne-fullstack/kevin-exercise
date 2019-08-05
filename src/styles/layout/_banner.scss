@@ -1,0 +1,93 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the banner of the site/application.
+// -----------------------------------------------------------------------------
+main {
+  background: $brand-color;
+
+  color: $white;
+
+  strong {
+    margin: 0;
+    
+    font-size: 30px;
+  }
+}
+
+.home {
+  padding-top: 9%;
+  padding-bottom: 8.5%;
+
+  height: 808px;
+
+  p {
+    margin-top: 3px;
+    margin-bottom: 1.4%;
+    max-width: 881px;
+
+    font-size: 15px;
+    word-spacing: 3px;
+  }
+}
+
+.kevin-petter-title {
+  position: relative;
+
+  margin-bottom: 0;
+  margin-left: 1%;
+  height: 74px;
+
+  font-size: 65px;
+}
+
+.web-dev-txt {
+  margin-left: 4px;
+
+  font-size: 28px;
+  word-spacing: 5px;
+}
+
+.btn-view-my-work {
+  padding: 12px 44px;
+  margin-top: 28px;
+  margin-left: 16px;
+
+  font-size: 15px;
+  color: $white;
+
+  background: transparent; 
+  border: 2px solid $white;
+  border-radius: 3px;
+}
+
+@include respond-to(lg-down) {
+  .home {
+    height: 670px;
+  }
+}
+
+@include respond-to(xs) {
+  .home {
+    padding-top: 0;
+    padding-bottom: 0%;
+
+    .kevin-petter-title {
+      font-size: 41px;
+      font-weight: bold;
+    }
+  }
+
+  .kevin-petter-title {
+    height: 46px;
+  }
+
+  .web-dev-txt {
+    font-size: 20px;
+  }
+
+  .btn-view-my-work {
+    padding: 8px 10px;
+    margin-top: 32px;
+    margin-left: 0;
+  }
+}

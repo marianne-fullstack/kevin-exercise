@@ -1,0 +1,13 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+//added fonts
+@include font-face($font-simple-line, $base-url + "fonts/", 'simple-line-icons', 'simple-line-icons');
+@include font-face($font-fontawesome, $base-url + "fonts/", 'fontawesome-webfont', 'fontawesome-webfont');
+@include font-face($font-glyph, $base-url + "fonts/", 'glyphicons-halflings-regular', 'glyphicons-halflings-regular');
+@include font-face($font-muli-light, $base-url + "fonts/", 'muli-light', 'muli-light');

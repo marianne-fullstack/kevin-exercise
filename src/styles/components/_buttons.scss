@@ -1,0 +1,30 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+button {
+  cursor: pointer;
+}
+
+.btn-resume {
+  padding: 11px 23px;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: $brand-color;
+
+  background: transparent;
+  border: 2px solid $brand-color;
+}
+
+.btn-submit {
+  padding: 13px 37px;
+  margin-left: 18px;
+  
+  font-size: 15px;
+  color: $gray-200;
+
+  background: transparent;
+  border: 1px solid $gray-200;
+  border-radius: 3px;
+}

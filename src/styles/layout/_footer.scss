@@ -1,0 +1,23 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer-section {
+  padding: 33px 0;
+
+  background: $gray-100;
+
+  span { 
+    font-size: 15px; 
+  }
+}
+
+@include respond-to(xs) {
+  .footer-section {
+    padding: 27px 0;
+
+    span { 
+      text-align: center; 
+    }
+  }
+}

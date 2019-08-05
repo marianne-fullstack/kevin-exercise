@@ -1,0 +1,175 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the about-me of the site/application.
+// ----------------------------------------------------------------------------- 
+.about-me-section {
+  padding-top: 97px;
+  padding-bottom: 102px;
+  
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  p { 
+    font-size: 15px; 
+  }
+
+  .html5-skill,
+  .css-skill,
+  .ps-skill,
+  .wordpress-skill,
+  .jQuery-skill { 
+    padding-left: 48%;
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.container-about-me { 
+  padding-left: 9px; 
+}
+
+.skill-img-holder { 
+  padding-left: 18px; 
+}
+
+.img-skills { 
+  max-width: 100%; 
+}
+
+.skills-title { 
+  margin-top: 36px; 
+}
+
+.social-title { 
+  margin-top: 27px; 
+}
+
+.skills { 
+  padding-left: 13px; 
+}
+
+.skill-holder {
+  padding: 16px;
+  margin-top: 65px;
+  width: 102%;
+
+  background: $white;
+}
+
+.skill-percentage {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  width: 99%;
+  height: 26px;
+
+  background: $service-container;
+
+  div {
+    padding-top: 4px;
+    height: 25px;
+
+    font-size: 13px;
+    color: $white;
+
+    background: $brand-color;
+  }
+}
+
+.html5-skill { 
+  width: 95%; 
+}
+
+.css-skill { 
+  width: 90%; 
+}
+
+.ps-skill { 
+  width: 85%; 
+}
+
+.wordpress-skill { 
+  width: 80%; 
+}
+
+.jQuery-skill {
+  margin-bottom: 25px;
+  width: 55%;
+}
+
+.social-media-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  width: 195px;
+
+  img {
+    width: 45px;
+    height: 34px;
+  }
+}
+
+@include respond-to(md) {
+  .social-media-holder { 
+    width: 64%; 
+  }
+}
+
+@include respond-to(xs) {
+  .about-me-section {
+    padding-top: 94px;
+    padding-bottom: 86px;
+  }
+
+  .section-header {
+    font-size: 25px;
+  }
+
+  .skill-holder {
+    padding-top: 20px;
+    padding-right: 18px;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .skills-title {
+    margin-top: 43px;
+    margin-left: 5px;
+  }
+
+  .social-title {
+    margin-top: 31px;
+    margin-left: 5px;
+  }
+
+  .social-media-holder { 
+    justify-content: space-around;
+    width: 65%; 
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .btn-resume {
+    padding: 11px 21px;
+    margin-left: 4px;
+  }
+
+  .skills {
+    span,
+    .skill-percentage {
+      margin-left: 5px;
+      height: 22px;
+
+      div {
+        height: 22px;
+      }
+    }
+  }
+}

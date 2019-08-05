@@ -1,0 +1,196 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the contact-me section of the site/application.
+// -----------------------------------------------------------------------------
+.contact-me-section {
+  padding: 97px 0;
+
+  .section-header {
+    margin-top: 2px;
+    margin-left: 11px;
+  }
+  
+  a { 
+    display: block; 
+  
+    color: black;
+    text-decoration: none;
+  }
+
+  a,
+  address { 
+    font-size: 15px; 
+  }
+
+  img { 
+    width: 30%; 
+  }
+
+  .contact-holder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 93px;
+    margin-top: 3.6%;
+
+    .contact { 
+      flex: 0 0 22%; 
+    }
+  }
+}
+
+.circle {
+  display: block;
+  margin-bottom: 13px;
+  width: 71px;
+  height: 69px;
+
+  background: $brand-color;
+  border-radius: 50%;
+
+  behavior: url(PIE.htc); 
+}
+
+.forms {
+  margin-top: 3%;
+  margin-left: 8%;
+  width: 85.3%;
+
+  input {
+    padding: 10px 10px;
+    margin-bottom: 25px;
+
+    font-size: 15px;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 185px;
+
+    font-size: 15px;
+  }
+}
+
+.input-group>.form-control {
+  margin-bottom: 27px;
+}
+
+.info-holder {
+  margin-top: 4%;
+  margin-left: 8.4%;
+  width: 83%;
+}
+
+@include respond-to(xl) {
+  .contact-me-section {
+    .circle { 
+      margin-left: 40%; 
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .contact-me-section {
+    .circle { 
+      margin-left: 37%; 
+    }
+  }
+}
+
+@include respond-to(md) {
+  .contact-me-section {
+    .circle-holder {
+      padding: 0;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .contact-me-section {
+    .circle { 
+      margin-left: 42%; 
+    }
+
+    .btn-submit { 
+      width: 96%; 
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .contact-me-section {
+    .link-contacts {
+      margin-bottom: 20px;
+    }
+
+    .btn-submit-holder {
+      padding: 0px 11%;
+      width: 545px;
+    }
+
+    .btn-submit {
+      margin-left: 0;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .contact-me-section {
+    .section-header {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .info-holder {
+      margin-top: 10%;
+
+      .circle {
+        width: 67px;
+        height: 69px;    
+      }
+    }
+
+    .forms {
+      margin-top: 16%;
+
+      .input-group>.form-control {
+        margin-bottom: 23px;
+      }
+    }
+
+    .btn-submit-holder {
+      padding: 0 12%;
+      width: 108%;  
+    }
+
+    .link-contacts {
+      margin-bottom: 20px;
+    }
+
+    .circle-holder.mb-3 {
+      display: flex!important;
+      justify-content: space-around;
+    }
+
+    .circle { 
+      margin-top: 5px;
+      margin-left: 37%;
+    }
+  
+    .btn-submit { 
+      width: 96%; 
+    }
+  }
+
+  .contact-holder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .contact { 
+      flex: 0 0 98%; 
+    }
+  }
+}

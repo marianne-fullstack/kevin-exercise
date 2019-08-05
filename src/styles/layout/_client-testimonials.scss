@@ -1,0 +1,190 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the testimonials of the site/application.
+// -----------------------------------------------------------------------------
+.client-testimonials-section {
+  padding-top: 147px;
+  padding-bottom: 10px;
+  height: 721px;
+
+  color: $white;
+
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, .75), 
+      rgba(0, 0, 0, .75)
+    ),
+    url("../assets/images/testimonials-bg.jpeg");
+  background-position: center; 
+  background-repeat: no-repeat;
+
+  .cyan-line {
+    margin-top: 1.4%;
+    margin-left: 47.4%;
+  }
+  
+  i  {
+    display: inline-block;
+    margin-top: 2.4%;
+    margin-left: 1.4%;
+
+    color: $white;
+
+    border: 1px solid $white;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 309px;
+
+    border: none;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 8px;
+  }
+  
+  .swiper-slide {
+    display: block;
+    padding: 0 30px;
+    padding-top: 20px;
+
+    background: transparent;
+
+    p { 
+      font-family: $font-muli-light; 
+    }
+
+    .quote-by {
+      margin-top: 27px;
+      margin-bottom: 6px;
+      margin-left: 10px;
+
+      font-family: $font-muli-light;
+      font-weight: bold;
+    }
+
+    .web-dev { 
+      margin-left: 18px;
+      
+      font-size: 15px; 
+    }
+  }
+}
+
+.swiper-pagination {
+  &.swiper-pagination-bullets {
+    top: 92%;
+    left: .9%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+
+    background-color: $white;
+
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $brand-color;
+  }
+}
+
+@include respond-to(xl) {
+  .client-testimonials-section {
+    background-size: 133%;
+    i  {
+      padding: 1.2%;
+      margin-bottom: 20px;
+
+      border-radius: 113px;
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .client-testimonials-section {
+    i  {
+      padding: 1.2%;
+
+      border-radius: 113px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .client-testimonials-section {
+    i {
+      padding: 2%;
+
+      border-radius: 118px;
+    }
+  }
+}
+
+@include respond-to(md-down) { 
+  .client-testimonials-section {
+    i { 
+      margin-bottom: 20px; 
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .client-testimonials-section {
+    i {
+      padding: 2%;
+
+      border-radius: 112px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .client-testimonials-section {
+    padding-top: 144px;
+    height: 760px;
+
+    .cyan-line {
+      margin-top: 3%;
+      margin-bottom: 70px;
+      margin-left: 38.4%;  
+    }
+
+    .swiper-slide {
+      padding-top: 5px;
+
+      .quote-by {
+        margin-top: 23px;
+        margin-left: 1px;
+      }
+
+      .web-dev {
+        margin-left: 8px;
+      }
+    }
+
+    .swiper-container {
+      height: 380px;
+
+      .swiper-pagination {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 118px;
+
+        &.swiper-pagination-bullets {
+          top: 86%;
+          left: 1.9%;
+        }
+      }
+    }
+
+    i {
+      padding: 4%;
+
+      border-radius: 112px;
+    }
+  }
+}
